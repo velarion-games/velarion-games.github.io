@@ -78,6 +78,9 @@
 * {
 	box-sizing: border-box;
 }
+html {
+	scrollbar-gutter: stable;
+}
 body {
 	margin: 0;
 	background: var(--notion-bg);
@@ -702,13 +705,43 @@ section:first-child {
 }
 
 /* ===== Dev log custom ===== */
+.site-icon {
+	object-fit: contain;
+	border-radius: var(--notion-radius);
+	flex-shrink: 0;
+}
+.site-icon--hero {
+	width: clamp(36px, 6vw, 52px);
+	height: clamp(36px, 6vw, 52px);
+}
 .site-header {
-	display: flex; align-items: center; justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: calc(var(--notion-page-width) + 48px);
+	margin: 0 auto;
+	width: 100%;
 	padding: 16px 24px;
 	background: var(--notion-bg);
 	border-bottom: 1px solid var(--notion-border-soft);
 }
-.site-header .brand { font-weight: 700; text-decoration: none; color: var(--notion-text); letter-spacing: -0.01em; font-size: 16px; }
+.page-home .site-header {
+	justify-content: flex-end;
+}
+.site-header .brand {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: 700;
+	text-decoration: none;
+	color: var(--notion-text);
+	letter-spacing: -0.01em;
+	font-size: 16px;
+}
+.site-header .brand .site-icon {
+	width: 22px;
+	height: 22px;
+}
 .site-header nav { display: flex; gap: 18px; }
 .site-header nav a { font-size: 14px; color: var(--notion-text-soft); text-decoration: none; }
 .site-header nav a:hover { color: var(--notion-text); }
@@ -747,9 +780,6 @@ section:first-child {
 	white-space: nowrap;
 	border: 0;
 }
-.page-home .site-header {
-	justify-content: flex-end;
-}
 .landing-hero {
 	padding-bottom: 0;
 }
@@ -757,6 +787,9 @@ section:first-child {
 	padding-bottom: 8px;
 }
 .landing-hero h1 {
+	display: flex;
+	align-items: center;
+	gap: 14px;
 	font-size: clamp(36px, 6vw, 56px);
 	margin-bottom: 0;
 }
