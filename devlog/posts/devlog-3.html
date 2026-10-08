@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>September: making the islands easier to read, and the boats worth watching - Velarion Games Dev log</title>
-  <meta name="description" content="September: clarity after playtests, nine new buildings, sailing cargo boats, and founding a second settlement.">
+  <title>It's a game. - Velarion Games Dev log</title>
+  <meta name="description" content="All the core pillars are in: the next tier, sailing cargo boats, a second settlement, and automated trade routes between the islands.">
   <link rel="icon" href="../../assets/velarionicon.png" type="image/png">
   <link rel="stylesheet" href="../../assets/styles.css">
 </head>
@@ -25,16 +25,20 @@
     <article class="post-article">
       <a class="back-link" href="../index.html">← All posts</a>
       <span class="notion-eyebrow">Dev log #3</span>
-      <h1>September: making the islands easier to read, and the boats worth watching</h1>
+      <h1>It's a game.</h1>
       <p class="post-meta">October 2026</p>
 
-      <div class="capture-placeholder">Capture 1: a boat tacking around a headland</div>
+      <div class="capture-placeholder">Capture 1: boats on an automated trade route between two islands</div>
 
-      <h2>Where I left off</h2>
+      <h2>Big milestone</h2>
 
       <p>
-        Last time I wrote that it finally feels like a game. That was true! But a game being there and a game feeling comfortable are two very different things.
-        September had two halves: first I made the island I already had easier to understand and control, then I finally got off it.
+        A month ago I wrote that it finally feels like a game. Now I can say it: it's a game.
+      </p>
+
+      <p>
+        All the core pillars are in. You build up a settlement, it grows into the next tier, you build boats, sail to another island, found a new settlement there, and connect the islands with automated trade routes.
+        Every piece of what I wanted to make is implemented. Not polished, but there!
       </p>
 
       <h2>Making it readable</h2>
@@ -46,7 +50,7 @@
 
       <p>
         So the first weeks of September went into clarity: warnings when a building can't work, tooltips, workforce and construction material displays, storage limits, and supply/demand rates so you can actually see if something runs out.
-        Placement got better snapping, rotation and feedback, and editing grounds (fields, orchards and so on) is a lot less fiddly.
+        Placement got better snapping, rotation and feedback, and editing grounds is a lot less fiddly.
       </p>
 
       <p>
@@ -55,47 +59,51 @@
 
       <div class="capture-placeholder">Capture 2: a building state that is readable now</div>
 
-      <h2>New buildings from Andris</h2>
+      <h2>The next tier</h2>
 
       <p>
-        Andris delivered nine new buildings for the second population tier: Shaper housing, Brick Kiln, Weaver, Oil Press, Fig Press, Lamp Maker, Workshop, Tavern and the Boat Builder.
-        I plugged them all into the playable build: footprints, entrances, materials, workers, unlocks.
-        The Workshop now opens up the next tier, so the build menu grows as your town grows.
-      </p>
-
-      <p>
-        Testing them also showed me what wasn't finished behind the models, mostly needs and services. So that's what I worked on next.
+        Last time I said the next set of buildings creates the first progression unlock. It's not just designed anymore, it's in the game.
+        Andris delivered nine new buildings: Shaper housing, Brick Kiln, Weaver, Oil Press, Fig Press, Lamp Maker, Workshop, Tavern and the Boat Builder.
+        I plugged them all into the playable build, and the Workshop opens up the next tier, so the build menu grows as your town grows.
         Thank you Andris, they look great in there!
       </p>
 
       <h2>Boats!</h2>
 
       <p>
-        This was the part I was waiting for. You can build a light or a heavy cargo boat at the Boat Builder and launch it.
-        You place a buoy, the boat finds a path around the land and sails there.
-        It reacts to wind and current, tacks automatically when it has to go upwind, rows when there's no other way, and the sails change pose.
-        I didn't expect how much I'd enjoy just watching it go around a headland.
+        This was the part I was waiting for. You build a cargo boat at the Boat Builder and launch it.
+        It finds a path around the land, reacts to wind and current, tacks when it has to go upwind, and rows when there's no other way.
+        I can watch it sail around a headland for way too long.
       </p>
 
-      <h2>Founding a second settlement</h2>
+      <h2>Connecting the islands</h2>
 
       <p>
-        Then the boat arrives at another island. If the island has no Port yet, you can found one from the boat.
-        In September that Port was free. Paying for it with the cargo you actually brought came next.
+        When a boat reaches an island with no Port, you can found a new settlement right from the boat.
+        The second island is a mining island: it has iron ore, but it can't produce its own timber or staple food. Those have to come from the first island.
       </p>
-
-      <div class="capture-placeholder">Capture 3: founding a new Port</div>
 
       <p>
-        This is where the game starts turning into what I wanted from the beginning.
-        The next island is a mining island: it has iron ore, but it can't produce its own timber or staple food.
-        Those have to come from the first island. So now the islands need each other.
+        And that was last month's target: connect the islands. Done!
+        You set up automated trade routes, the boats sail them with realistic sailing, and the goods keep flowing.
+        The UI and UX for routes is pretty decent to start with. So now the islands really need each other.
       </p>
+
+      <div class="capture-placeholder">Capture 3: setting up a trade route</div>
 
       <h2>What's next</h2>
 
       <p>
-        The three-island economy is not done yet. Making the islands supply each other with real trade routes is the next big goal.
+        Now that all the pieces are implemented, I'll start iterating on the game feel, from my own playing and from watching people play my game.
+      </p>
+
+      <p>
+        After these early rounds and their feedback are integrated, I want to invite complete strangers to play it too.
+        At the same time I'll keep adding more and more polish into this scope.
+      </p>
+
+      <p>
+        It's getting very very enjoyable to develop this game now!
       </p>
 
       <p>
@@ -106,7 +114,7 @@
         <div>✉️</div>
         <div>
           <strong>Follow along!</strong>
-          <p>If you want to follow how the three islands come together, sign up for the next devlog by email.</p>
+          <p>If you want to see how it plays out, sign up for the next devlog by email.</p>
           <div class="form-embed"></div>
         </div>
       </div>
