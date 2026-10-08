@@ -286,7 +286,7 @@ section {
 	border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 	overflow: hidden;
 	isolation: isolate;
-	background: #0b2a33 url("post-2-island.png") center 60% / cover no-repeat;
+	background: #0b2a33 url("home-hero.jpg") center 55% / cover no-repeat;
 }
 .landing-hero::before {
 	content: "";
