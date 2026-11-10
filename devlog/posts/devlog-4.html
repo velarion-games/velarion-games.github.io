@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Playtests, polish, and asking for advice - Velarion Games Dev log</title>
+  <meta name="description" content="October and early November: playtests, goals and notifications, a big visual pass, the first sounds, and starting to ask for advice on going public.">
+  <link rel="icon" href="../../assets/velarionicon.png" type="image/png">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <!-- visitor stats: Umami, cookieless; see privacy.html -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f9b09959-e14e-4fc7-bab5-a89dfbc5439d" data-domains="velarion.games"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">
+      <img class="site-icon" src="../../assets/velarionicon.png" alt="" width="22" height="22">
+      Velarion Games
+    </a>
+    <nav aria-label="Site">
+      <a href="../index.html">Dev log</a>
+      <a href="/#newsletter">Newsletter</a>
+      <a href="https://x.com/VelarionGames" rel="noopener noreferrer">X</a>
+      <a href="https://discord.gg/VWsafFcXDW" rel="noopener noreferrer">Discord</a>
+    </nav>
+  </header>
+    <article class="post-article">
+      <a class="back-link" href="../index.html">← All posts</a>
+      <span class="notion-eyebrow">Dev log #4</span>
+      <h1>Playtests, polish, and asking for advice</h1>
+      <p class="post-meta">November 2026</p>
+
+      <!-- MEDIA: lead clip or screenshot, e.g. the port and woodcutter corner. Video must be SDR Rec.709. -->
+      <img src="../../assets/devlog-4-port-corner.jpg" alt="The port and woodcutter corner of an island, with trees, roads and weathered buildings." loading="lazy">
+      <p class="post-meta">The port and woodcutter corner.</p>
+
+      <h2>A bit of everything</h2>
+
+      <p>
+        Last time I said the next step is playtesting, then making the game feel better and polishing it.
+        That's pretty much exactly what happened, so this one is a bit of everything.
+      </p>
+
+      <h2>Playing it, a lot</h2>
+
+      <p>
+        I recorded myself playing the whole two-island game, start to finish. Then I went through the recording and marked every stretch where I was just waiting with nothing to build.
+        There were a lot more of those than I thought. So I did a pacing pass on the economy, and on my next run it felt okay.
+      </p>
+
+      <p>
+        Then Barni came over to play. He plays and loves Anno, so I was nervous!
+        I gave him a few tips but mostly let him figure it out. And he finished it: all the way from the first woodcutter to bringing iron ore home from the mining island.
+      </p>
+
+      <p>
+        He also found all the places where the game tricks you.
+        He tried to escape from building mode with right click. He deleted buildings by accident because the demolish button doesn't ask first. He wanted to move a building he placed in the wrong spot, and you can't do that yet.
+        And his mining island starved. Three times. The notifications told him, he just didn't see them.
+        Those are all on my list now.
+      </p>
+
+      <h2>Telling you what to do next</h2>
+
+      <p>
+        Before these playtests I added two things a new player really needs.
+      </p>
+
+      <p>
+        Goals: a short chain of them is always on screen, from building your first woodcutter to bringing iron ore home. You always know what you're working towards.
+      </p>
+
+      <p>
+        Notifications: when people go hungry, starve or die, it shows up in a log, and one click takes you there, on any island.
+        Barni proved it's not loud enough yet, but the base is in.
+        The game also saves when you quit now. Small thing, but losing an hour of building is not fun.
+      </p>
+
+      <!-- MEDIA: screenshot of the goals panel and/or the notifications log -->
+      <img src="../../assets/devlog-4-goals-notifications.jpg" alt="The goals panel and the notifications log." loading="lazy">
+      <p class="post-meta">Goals on the left, notifications on the right.</p>
+
+      <h2>Making it look like the Adriatic</h2>
+
+      <p>
+        Then came the part I enjoyed the most: making all the big pieces of the picture fit together.
+      </p>
+
+      <p>
+        Vegetation felt like the weakest part, and it carries most of the first impression, so I spent a lot of time on trees.
+        They have a new shader now, so they sway in the wind and catch the light, and I rebuilt the oak crowns in Blender so they read well from high above.
+        The other species got the same treatment. The palms are gone for now: they're not really native, and they gave the wrong impression.
+      </p>
+
+      <p>
+        I also gathered a lot of Adriatic reference photos and made new terrain textures from them.
+        The buildings got a weathered look, because they were way too clean and fake.
+        There are cloud shadows drifting over the islands and the sea, foam where the waves hit the shore, and the light is warmer, which is a lot easier on the eyes in a long session.
+      </p>
+
+      <!-- MEDIA: before/after of the trees, or a clip of cloud shadows moving over an island (SDR Rec.709) -->
+      <img src="../../assets/devlog-4-trees.jpg" alt="Oak trees with the new foliage shader, seen from the gameplay camera." loading="lazy">
+      <p class="post-meta">The new trees.</p>
+
+      <img src="../../assets/devlog-4-cloud-shadows.jpg" alt="Cloud shadows over an island and the sea." loading="lazy">
+      <p class="post-meta">Cloud shadows over the island.</p>
+
+      <h2>It's not silent anymore</h2>
+
+      <p>
+        Until now the game had no sound at all. Now there's a first pass: building, placing and clicking all make a sound, and you hear the sea, the towns and the harbours depending on where the camera is.
+        It's far from final, but it changes how it feels more than I expected.
+      </p>
+
+      <h2>Asking for advice</h2>
+
+      <p>
+        Here's the new part. For a long time I've been heads down building. Now I'm starting to reach out.
+      </p>
+
+      <p>
+        I reached out to another indie developer making a city builder, and I'm looking for a few more, to maybe start a small group where we show each other our progress every week.
+        I'm reading up on marketing, because I honestly don't know much about it yet.
+        And I'm writing to a few publishers. Not to pitch, just to ask how they see a game like this at this stage, and what they'd want to see.
+      </p>
+
+      <p>
+        The game also has its own website now: <a href="https://secondsailinggame.com">Second Sailing</a>.
+      </p>
+
+      <h2>What's next</h2>
+
+      <p>
+        Going public. I want to get the game out in the open and start gathering wishlists, while I keep polishing the visuals alongside. The polishing is also what I'll be showing, so the two go together.
+      </p>
+
+      <p>
+        And I'll fix what Barni found, before the next round of playtests.
+      </p>
+
+      <p>
+        Thanks for reading!
+      </p>
+
+      <div class="notion-callout" data-tone="blue">
+        <div>✉️</div>
+        <div>
+          <strong>Follow along!</strong>
+          <p>If you want to see how it plays out, sign up for the next devlog by email.</p>
+          <div class="form-embed"></div>
+        </div>
+      </div>
+
+      <nav class="post-nav" aria-label="Post">
+        <a class="notion-button" data-variant="secondary" href="devlog-3.html">← Previous</a>
+      </nav>
+
+      <section class="comments">
+        <h2>Comments</h2>
+        <script src="https://giscus.app/client.js"
+        data-repo="velarion-games/velarion-games.github.io"
+        data-repo-id="R_kgDOQKMoDw"
+        data-category="General"
+        data-category-id="DIC_kwDOQKMoD84C-fCo"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+      </section>
+    </article>
+
+    <p class="notion-footer">© 2026 Velarion Games · <a href="/">Home</a> · <a href="/privacy.html">Privacy</a> · Built in the open.</p>
+  </main>
+  <script src="../../assets/newsletter.js" defer></script>
+</body>
+</html>
