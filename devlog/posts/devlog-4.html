@@ -9,6 +9,17 @@
   <link rel="stylesheet" href="../../assets/styles.css">
   <!-- visitor stats: Umami, cookieless; see privacy.html -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="f9b09959-e14e-4fc7-bab5-a89dfbc5439d" data-domains="velarion.games"></script>
+  <style>
+    .post-article .lead-float { float: left; width: 220px; margin: 6px 32px 16px calc(-1 * min(var(--gutter), 48px)); }
+    .post-article .lead-float video { width: 100%; max-width: 100%; margin: 0; }
+    .post-article .lead-float figcaption { margin: 10px 0 0; text-align: left; }
+    .post-article .lead-float + h2 { margin-top: 0; }
+    @media (max-width: 640px) {
+      .post-article .lead-float { float: none; width: auto; max-width: 200px; margin: 24px auto 32px; }
+      .post-article .lead-float figcaption { text-align: center; }
+      .post-article .lead-float + h2 { margin-top: 52px; }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -23,17 +34,17 @@
       <a href="https://discord.gg/VWsafFcXDW" rel="noopener noreferrer">Discord</a>
     </nav>
   </header>
+  <main class="notion-shell">
     <article class="post-article">
       <a class="back-link" href="../index.html">← All posts</a>
       <span class="notion-eyebrow">Dev log #4</span>
       <h1>Playtests, polish, and asking for advice</h1>
       <p class="post-meta">November 2026</p>
 
-      <div class="media-placeholder" style="aspect-ratio:16/9;border:2px dashed currentColor;opacity:.55;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px;margin:1.5em 0 .5em;">
-        <strong>Screenshot: the port and woodcutter corner (or a short clip)</strong>
-        <span>save as assets/devlog-4-lead.jpg</span>
-      </div>
-      <p class="post-meta">Caption for the lead shot.</p>
+      <figure class="lead-float">
+        <video src="../../assets/devlog-4-port.mp4" poster="../../assets/devlog-4-port-poster.jpg" autoplay muted loop playsinline aria-label="A port on a pebble beach, with a dirt road leading up through the trees to a woodcutter's hut."></video>
+        <figcaption class="post-meta">The port: grime on the buildings, the new dirt road, and the shore foam (still work in progress).</figcaption>
+      </figure>
 
       <h2>A bit of everything</h2>
 
@@ -117,9 +128,6 @@
       <p>
         None of these is a big thing on its own. But I want every little part that adds to the immersion to be there, and to fit together tastefully.
       </p>
-
-      <video src="../../assets/devlog-4-port.mp4" poster="../../assets/devlog-4-port-poster.jpg" autoplay muted loop playsinline style="width:auto;max-width:100%;max-height:80vh;margin-left:auto;margin-right:auto;" aria-label="A port on a pebble beach, with a dirt road leading up through the trees to a woodcutter's hut."></video>
-      <p class="post-meta">The port: grime on the buildings, the new dirt road, and the shore foam (still work in progress).</p>
 
       <p>
         Same as with the environment art in July, each piece looked meh on its own until the whole picture came together. This time I knew that going in, so I kept going.
