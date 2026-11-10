@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Playtests, polish, and asking for advice - Velarion Games Dev log</title>
+  <meta name="description" content="October and early November: playtests, goals and notifications, a big visual pass, the first sounds, and starting to ask for advice.">
+  <link rel="icon" href="../../assets/velarionicon.png" type="image/png">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <!-- visitor stats: Umami, cookieless; see privacy.html -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="f9b09959-e14e-4fc7-bab5-a89dfbc5439d" data-domains="velarion.games"></script>
+  <style>
+    .post-article .lead-float { float: left; width: 220px; margin: 6px 32px 16px calc(-1 * min(var(--gutter), 48px)); }
+    .post-article .lead-float video { width: 100%; max-width: 100%; margin: 0; }
+    .post-article .lead-float figcaption { margin: 10px 0 0; text-align: left; }
+    @media (max-width: 640px) {
+      .post-article .lead-float { float: none; width: auto; max-width: 200px; margin: 24px auto 32px; }
+      .post-article .lead-float figcaption { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">
+      <img class="site-icon" src="../../assets/velarionicon.png" alt="" width="22" height="22">
+      Velarion Games
+    </a>
+    <nav aria-label="Site">
+      <a href="../index.html">Dev log</a>
+      <a href="/#newsletter">Newsletter</a>
+      <a href="https://x.com/VelarionGames" rel="noopener noreferrer">X</a>
+      <a href="https://discord.gg/VWsafFcXDW" rel="noopener noreferrer">Discord</a>
+    </nav>
+  </header>
+  <main class="notion-shell">
+    <article class="post-article">
+      <a class="back-link" href="../index.html">← All posts</a>
+      <span class="notion-eyebrow">Dev log #4</span>
+      <h1>Playtests, polish, and asking for advice</h1>
+      <p class="post-meta">November 2026</p>
+
+      <figure class="lead-float">
+        <video src="../../assets/devlog-4-port.mp4" poster="../../assets/devlog-4-port-poster.jpg" autoplay muted loop playsinline aria-label="A port on a pebble beach, with a dirt road leading up through the trees to a woodcutter's hut."></video>
+        <figcaption class="post-meta">The port: grime on the buildings, the new dirt road, and the shore foam (still work in progress).</figcaption>
+      </figure>
+
+      <p>
+        A friend I used to play Anno 1800 with came over to try my game.
+        He made it all the way to bringing iron ore home!
+        Along the way, his mining island starved three times. The game warned him every time. He never saw it.
+      </p>
+
+      <p>
+        That afternoon pretty much sums up where the game is now. It works, you can play it to the end, and now it has to be clear and feel good.
+        That's what this month was about: playtesting, guiding the player, and a lot of polish. And something new at the end: I started asking people for advice.
+      </p>
+
+      <h2>Playing it myself</h2>
+
+      <p>
+        First I recorded myself playing the whole two-island game, from the first woodcutter to bringing iron ore home.
+        Then I went through the recording and marked every stretch where I was just sitting there, waiting, with nothing to build.
+        There were way more of those than I thought! So I did a pacing pass on the economy, and on my next run it felt okay.
+      </p>
+
+      <h2>Guiding the player</h2>
+
+      <p>
+        Before letting anyone else play, I had to figure out how much the game should guide you.
+        I'm looking for the balance that's the most fun for the kind of player I'm making this for.
+        No hand holding, but a bit of direction until you get familiar with how the systems work. Then the game gets out of your way.
+      </p>
+
+      <p>
+        That's why there are goals now. There's always one on screen, in a chain that walks you from your first woodcutter to bringing iron ore home from the mining island.
+        You always have something to work towards, but how you get there is up to you.
+      </p>
+
+      <p>
+        And notifications: when people go hungry, starve or die, it goes into a log, and one click takes you right there, on any island.
+        Right now it's a simple list, and it's not loud enough yet (you saw why at the top).
+        But I have bigger plans for it. As soon as I have the time, these will turn into barks: your people speaking up when something's wrong, with characters and voice acting.
+        I want them to be a strong part of the narrative design, not just a list of warnings.
+      </p>
+
+      <img src="../../assets/devlog-4-goals.jpg" alt="The home island from above. On the left, the goals panel shows chapter 3 of 5, Ready for the sea, and below it the notifications log." loading="lazy">
+      <p class="post-meta">Look at the panels on the left: goals at the top, notifications at the bottom.</p>
+
+      <h2>A friend plays</h2>
+
+      <p>
+        Back to my friend. I was a bit nervous, he knows the genre well.
+        I gave him a few tips, but mostly I just let him figure things out. And he finished it! Every goal, all the way to the iron ore.
+      </p>
+
+      <p>
+        Someone new to the controls, who plays a lot of games like this, notices things I just don't anymore. I already have the muscle memory, so I don't even see them.
+        He kept trying to get out of building mode with right click. He deleted buildings by accident, because the demolish button doesn't ask first.
+        He wanted to move a building he put in the wrong spot, and you can't do that yet.
+        And the starving... The notifications were there, they just weren't loud enough to get his attention.
+      </p>
+
+      <p>
+        Watching someone play is still the most valuable thing I can do. All of it is on my list now, and I keep finding new ways to make the game more comfortable to handle.
+      </p>
+
+      <h2>Making it look better</h2>
+
+      <p>
+        Then came the visuals: getting all the big pieces of the picture to fit together.
+        This is probably the most challenging part for me right now. The artistic workflow is new to me, I'm still learning it as I go. But I can feel that I'm improving.
+      </p>
+
+      <p>
+        The vegetation felt like the weakest part, and it carries most of the first impression, so I spent a lot of time on trees.
+        They have a new shader, so they gently sway and catch the light, and I reworked the oak crowns in Blender so they look good from high above.
+        The other species got the same treatment.
+      </p>
+
+      <video src="../../assets/devlog-4-foliage-wind.mp4" poster="../../assets/devlog-4-foliage-wind-poster.jpg" autoplay muted loop playsinline aria-label="Trees and grass gently swaying next to a woodcutter's hut."></video>
+      <p class="post-meta">Foliage gently swaying.</p>
+
+      <p>
+        I collected a bunch of reference photos and made new terrain textures from them.
+        The buildings got a weathered look, because they were way too clean and fake, and the dirt roads got a visual update too.
+        Cloud shadows drift over the islands and the sea now, there's foam where the waves hit the shore, and the light is warmer, which is a lot easier on the eyes when you play for hours.
+      </p>
+
+      <img src="../../assets/devlog-4-cloud-shadows.jpg" alt="A small sailing boat on open sea, with cloud shadows drifting over the water toward the horizon." loading="lazy">
+      <p class="post-meta">Cloud shadows over the endless ocean.</p>
+
+      <p>
+        None of these is a big thing on its own. But I want every little part that adds to the immersion to be there, and to fit together tastefully.
+      </p>
+
+      <h2>When I lose momentum</h2>
+
+      <p>
+        I'll be honest, it's not always smooth. Some days I sit in front of a tree for hours and it just doesn't look right, and I start doubting the whole thing.
+        Working alone, there's nobody to tell you it's fine, keep going.
+      </p>
+
+      <p>
+        A book has been helping me a lot with this: <em>Art &amp; Fear</em> by David Bayles and Ted Orland.
+        Whenever I lose momentum, a chapter of it puts me back on track. If you make anything yourself, I can recommend it.
+      </p>
+
+      <h2>It's not silent anymore</h2>
+
+      <p>
+        Until now the game had no sound at all. Now Bence's sounds are in!
+        Building, placing and clicking all make a sound, and you hear the sea, the towns and the harbours depending on where you look.
+        My favourites are the chimes. Getting a nice little jingle when I complete something actually makes me happy :D
+        It's a first pass, far from final, but it changes how the game feels more than I expected. Thank you, Bence!
+      </p>
+
+      <h2>Asking for advice</h2>
+
+      <p>
+        For about a year I was heads down, building. Now I'm starting to reach out.
+      </p>
+
+      <p>
+        I wrote to another indie developer who is making a city builder, and I'm looking for a few more. Maybe we can start a small group and show each other our progress periodically. Building alone gets lonely.
+      </p>
+
+      <p>
+        I'm reading up on marketing, because honestly, I don't know much about it yet.
+        And I'm writing to a few publishers. Not to pitch anything, just to ask how they see a game like this at this stage, and what they'd want to see.
+      </p>
+
+      <h2>What's next</h2>
+
+      <p>
+        Two things: a go to market plan, and more polish, with the visuals as the main focus.
+        With the advice I'm gathering now, I want to work out how and when to show the game to more people.
+        Meanwhile I'll keep making it look better, piece by piece.
+      </p>
+
+      <p>
+        And of course I'll fix what my friend found before the next round of playtests.
+      </p>
+
+      <p>
+        Thanks for reading!
+      </p>
+
+      <div class="notion-callout" data-tone="blue">
+        <div>✉️</div>
+        <div>
+          <strong>Follow along!</strong>
+          <p>If you want to see how it plays out, sign up for the next devlog by email.</p>
+          <div class="form-embed"></div>
+        </div>
+      </div>
+
+      <nav class="post-nav" aria-label="Post">
+        <a class="notion-button" data-variant="secondary" href="devlog-3.html">← Previous</a>
+      </nav>
+
+      <section class="comments">
+        <h2>Comments</h2>
+        <script src="https://giscus.app/client.js"
+        data-repo="velarion-games/velarion-games.github.io"
+        data-repo-id="R_kgDOQKMoDw"
+        data-category="General"
+        data-category-id="DIC_kwDOQKMoD84C-fCo"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
+      </section>
+    </article>
+
+    <p class="notion-footer">© 2026 Velarion Games · <a href="/">Home</a> · <a href="/privacy.html">Privacy</a> · Built in the open.</p>
+  </main>
+  <script src="../../assets/newsletter.js" defer></script>
+</body>
+</html>
