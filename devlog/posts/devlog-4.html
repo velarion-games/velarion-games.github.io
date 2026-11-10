@@ -29,112 +29,118 @@
       <h1>Playtests, polish, and asking for advice</h1>
       <p class="post-meta">November 2026</p>
 
-      <!-- MEDIA: lead clip or screenshot, e.g. the port and woodcutter corner. Video must be SDR Rec.709. -->
-      <img src="../../assets/devlog-4-port-corner.jpg" alt="The port and woodcutter corner of an island, with trees, roads and weathered buildings." loading="lazy">
-      <p class="post-meta">The port and woodcutter corner.</p>
+      <!-- MEDIA: lead screenshot or clip, e.g. the port and woodcutter corner (video must be SDR Rec.709) -->
 
       <h2>A bit of everything</h2>
 
       <p>
-        Last time I said the next step is playtesting, then making the game feel better and polishing it.
-        That's pretty much exactly what happened, so this one is a bit of everything.
+        Last time I said I'd start playtesting, then work on the game feel and polish.
+        Well, that's pretty much exactly what happened, so this one is a bit of everything.
+        And something new at the end: I started asking people for advice.
       </p>
 
-      <h2>Playing it, a lot</h2>
+      <h2>Playtesting</h2>
 
       <p>
-        I recorded myself playing the whole two-island game, start to finish. Then I went through the recording and marked every stretch where I was just waiting with nothing to build.
-        There were a lot more of those than I thought. So I did a pacing pass on the economy, and on my next run it felt okay.
-      </p>
-
-      <p>
-        Then Barni came over to play. He plays and loves Anno, so I was nervous!
-        I gave him a few tips but mostly let him figure it out. And he finished it: all the way from the first woodcutter to bringing iron ore home from the mining island.
+        First I recorded myself playing the whole two-island game, from the first woodcutter to bringing iron ore home.
+        Then I went through the recording and marked every stretch where I was just sitting there, waiting, with nothing to build.
+        There were way more of those than I thought! So I did a pacing pass on the economy, and on my next run it felt okay.
       </p>
 
       <p>
-        He also found all the places where the game tricks you.
-        He tried to escape from building mode with right click. He deleted buildings by accident because the demolish button doesn't ask first. He wanted to move a building he placed in the wrong spot, and you can't do that yet.
-        And his mining island starved. Three times. The notifications told him, he just didn't see them.
-        Those are all on my list now.
-      </p>
-
-      <h2>Telling you what to do next</h2>
-
-      <p>
-        Before these playtests I added two things a new player really needs.
+        Then a friend came over to play, the one I played Anno 1800 a LOT with. I was a bit nervous, he knows the genre well.
+        I gave him a few tips, but mostly I just let him figure things out. And he finished it! Every goal, all the way to the iron ore.
       </p>
 
       <p>
-        Goals: a short chain of them is always on screen, from building your first woodcutter to bringing iron ore home. You always know what you're working towards.
+        He also found every place where the game tricks you.
+        He kept trying to get out of building mode with right click. He deleted buildings by accident, because the demolish button doesn't ask first.
+        He wanted to move a building he put in the wrong spot, and you can't do that yet.
+        And his mining island starved. Three times... The notifications were telling him, he just never noticed them.
       </p>
 
       <p>
-        Notifications: when people go hungry, starve or die, it shows up in a log, and one click takes you there, on any island.
-        Barni proved it's not loud enough yet, but the base is in.
-        The game also saves when you quit now. Small thing, but losing an hour of building is not fun.
+        Watching someone play is still the most valuable thing I can do. All of it is on my list now.
       </p>
 
-      <!-- MEDIA: screenshot of the goals panel and/or the notifications log -->
-      <img src="../../assets/devlog-4-goals-notifications.jpg" alt="The goals panel and the notifications log." loading="lazy">
-      <p class="post-meta">Goals on the left, notifications on the right.</p>
+      <h2>Guiding the player</h2>
+
+      <p>
+        Before the playtests I added two things a new player really needs.
+      </p>
+
+      <p>
+        Goals: there's always one on screen now, in a chain that walks you from your first woodcutter to iron ore from the mining island.
+        You always know what you're working towards.
+      </p>
+
+      <p>
+        Notifications: when people go hungry, starve or die, it goes into a log, and one click takes you right there, on any island.
+        My friend proved it's not loud enough yet, but the base is in.
+      </p>
+
+      <p>
+        Oh, and the game saves when you quit now. Small thing, but losing an hour of building is not fun.
+      </p>
+
+      <!-- MEDIA: the goals panel and/or the notifications log -->
 
       <h2>Making it look like the Adriatic</h2>
 
       <p>
-        Then came the part I enjoyed the most: making all the big pieces of the picture fit together.
+        Then came the part I enjoyed the most: getting all the big pieces of the picture to fit together.
       </p>
 
       <p>
-        Vegetation felt like the weakest part, and it carries most of the first impression, so I spent a lot of time on trees.
-        They have a new shader now, so they sway in the wind and catch the light, and I rebuilt the oak crowns in Blender so they read well from high above.
-        The other species got the same treatment. The palms are gone for now: they're not really native, and they gave the wrong impression.
+        The vegetation felt like the weakest part, and it carries most of the first impression, so I spent a lot of time on trees.
+        They have a new shader, so they sway in the wind and catch the light, and I reworked the oak crowns in Blender so they look good from high above.
+        The other species got the same treatment. The palms are gone for now: they're not really native there, and they gave the wrong impression.
       </p>
 
       <p>
-        I also gathered a lot of Adriatic reference photos and made new terrain textures from them.
+        I collected a bunch of Adriatic reference photos and made new terrain textures from them.
         The buildings got a weathered look, because they were way too clean and fake.
-        There are cloud shadows drifting over the islands and the sea, foam where the waves hit the shore, and the light is warmer, which is a lot easier on the eyes in a long session.
+        Cloud shadows drift over the islands and the sea now, there's foam where the waves hit the shore, and the light is warmer, which is a lot easier on the eyes when you play for hours.
       </p>
 
-      <!-- MEDIA: before/after of the trees, or a clip of cloud shadows moving over an island (SDR Rec.709) -->
-      <img src="../../assets/devlog-4-trees.jpg" alt="Oak trees with the new foliage shader, seen from the gameplay camera." loading="lazy">
-      <p class="post-meta">The new trees.</p>
+      <p>
+        Same as with the environment art in July, each piece looked meh on its own until the whole picture came together. This time I knew that going in, so I kept going.
+      </p>
 
-      <img src="../../assets/devlog-4-cloud-shadows.jpg" alt="Cloud shadows over an island and the sea." loading="lazy">
-      <p class="post-meta">Cloud shadows over the island.</p>
+      <!-- MEDIA: the trees, and/or a clip of cloud shadows moving over an island (SDR Rec.709) -->
 
       <h2>It's not silent anymore</h2>
 
       <p>
-        Until now the game had no sound at all. Now there's a first pass: building, placing and clicking all make a sound, and you hear the sea, the towns and the harbours depending on where the camera is.
-        It's far from final, but it changes how it feels more than I expected.
+        Until now the game had no sound at all. Now Bence's sounds are in!
+        Building, placing and clicking all make a sound, and you hear the sea, the towns and the harbours depending on where you look.
+        It's a first pass, far from final, but it changes how the game feels more than I expected. Thank you, Bence!
       </p>
 
       <h2>Asking for advice</h2>
 
       <p>
-        Here's the new part. For a long time I've been heads down building. Now I'm starting to reach out.
+        For about a year I was heads down, building. Now I'm starting to reach out.
       </p>
 
       <p>
-        I reached out to another indie developer making a city builder, and I'm looking for a few more, to maybe start a small group where we show each other our progress every week.
-        I'm reading up on marketing, because I honestly don't know much about it yet.
-        And I'm writing to a few publishers. Not to pitch, just to ask how they see a game like this at this stage, and what they'd want to see.
+        I wrote to another indie developer who is making a city builder, and I'm looking for a few more. Maybe we can start a small group and show each other our progress every week. Building alone gets lonely.
       </p>
 
       <p>
-        The game also has its own website now: <a href="https://secondsailinggame.com">Second Sailing</a>.
+        I'm reading up on marketing, because honestly, I don't know much about it yet.
+        And I'm writing to a few publishers. Not to pitch anything, just to ask how they see a game like this at this stage, and what they'd want to see.
       </p>
 
       <h2>What's next</h2>
 
       <p>
-        Going public. I want to get the game out in the open and start gathering wishlists, while I keep polishing the visuals alongside. The polishing is also what I'll be showing, so the two go together.
+        Going public! I want to get the game out in the open and start gathering wishlists, while I keep polishing the visuals.
+        The polish is also what I'll be showing you, so the two go hand in hand.
       </p>
 
       <p>
-        And I'll fix what Barni found, before the next round of playtests.
+        And of course I'll fix what my friend found before the next round of playtests.
       </p>
 
       <p>
